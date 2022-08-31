@@ -1,10 +1,5 @@
 - 👋 Hi, I’m @Motlakz
-- 👀 I’m interested in Web Development
-- 🌱 I’m currently learning JavaScript Basics
-- 💞️ I’m looking to collaborate on Website Building Projects using JS, CSS & HTML.
-- 📫 How to reach me mtlakes597@gmail.com
-
-<!---
-Motlakz/Motlakz is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+- 👀 I love to code and am riding the train to JavaScript Valley!
+- 🌱 I’m currently learning Full Stack JavaScript and my Working Tech Stack is Ruby on Rails. I guess you can say I am juggling the best of both worlds as much as I can.
+- 💞️ I’m looking to collaborate on Website Building Projects using JS, CSS & HTML. Eventually, I will work my way up to Web Apps and useful tools to solve huge problems in the industry.
+- 📫 How to reach me motlalepulasello5@gmail.com
