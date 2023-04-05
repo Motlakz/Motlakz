@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Motlakz
 - 👀 I love to code and am riding the train to JavaScript Valley!
-- 🌱 I’m currently learning Full Stack JavaScript and my Working Tech Stack is Ruby on Rails. I guess you can say I am juggling the best of both worlds as much as I can.
+- 🌱 I’m currently learning Full Stack JavaScript and my Working Tech Stack is Ruby on Rails. Call me a Ruby-Script Hybrid! Best of both worlds
 - 💞️ I’m looking to collaborate on Website Building Projects using JS, CSS & HTML. Eventually, I will work my way up to Web Apps and useful tools to solve huge problems in the industry.
 - 📫 How to reach me motlalepulasello5@gmail.com
