@@ -1,26 +1,33 @@
-![Motlalepula Sello](./profile-banner.svg)
+![Motlalepula Sello — Full Stack Engineer](./profile-banner.svg)
 
 <br/>
 
-I build tools people appreciate. Six shipped SaaS products, 500+ sign-ups, a 4★ average - and I'm just getting started.
-
-NextJS for efficiency, TailwindCSS for clean class implementation, TypeScript always. My toolbox caters to the Front End, the Back End, the whole Nine Yards.
+I ship products people actually use. Six SaaS apps live in the wild - AI tools, health trackers, community platforms, and utilities - all built solo from idea to production.
 
 ---
 
 ### Quollie AI &nbsp;—&nbsp; [quollie.com](https://quollie.com)
-Your SEO traffic to booked appointments to paying customers - your sales automation engine does it all.
+AI sales agent that automates your entire funnel - lead capture, qualification, and booking, 24/7.
 
 ### Belly Clock &nbsp;—&nbsp; [bellyclock.com](https://bellyclock.com)
-Fasting routine tracker for biohackers, health enthusiasts, and religious folks. Hourly progress, hydration reminders, and a timeline that makes the journey feel less overwhelming.
+AI-powered fasting and routine planner. Supports intermittent fasting, Ramadan, and Sunnah fasts - built around your schedule, not a template.
 
 ### Indie Launchers &nbsp;—&nbsp; [indielaunchers.com](https://indielaunchers.com)
-A community and toolkit for indie makers going to market. Launch checklists, peer accountability, and visibility tools - for builders who ship without a team behind them.
+A launchpad for indie makers. Discover products, climb the leaderboard, and grow your reach in a community of builders.
+
+### SpeakDiary &nbsp;—&nbsp; [speakdiary.com](https://speakdiary.com)
+Voice + text journaling app with AI prompts, mood analytics, and a 4.9★ rating.
+
+### Newsletter Name Ideas &nbsp;—&nbsp; [newsletternameideas.com](https://newsletternameideas.com)
+AI name generator for newsletters - with domain checking and social handle lookup built in.
+
+### LoveTest AI &nbsp;—&nbsp; [lovetestai.com](https://lovetestai.com)
+AI love and compatibility tests - zodiac, numerology, birthdate. High traffic, always free.
 
 ---
 
-`JavaScript` `TypeScript` `React` `Next.js` `Node.js` `Ruby on Rails` `PostgreSQL` `Docker` `Linux` `REST APIs`
+`TypeScript` `Next.js` `React` `Tailwind CSS` `PostgreSQL` `REST APIs` `Framer Motion` `React Flow` `TanStack Query` `Docker`
 
 ---
 
-📍 Johannesburg &nbsp;·&nbsp; ✉️ motlalepulasello5@gmail.com &nbsp;·&nbsp; open to collaborations & freelance
+📍 Johannesburg &nbsp;·&nbsp; ✉️ motlalepulasello5@gmail.com &nbsp;·&nbsp; open to collabs & freelance
