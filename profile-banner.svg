@@ -1,43 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620">
   <defs>
     <linearGradient id="limeCyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#c8f542"/>
+      <stop offset="0%" stop-color="#c8f542"/>
       <stop offset="100%" stop-color="#3de8c8"/>
     </linearGradient>
     <linearGradient id="orangeRose" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#ff8c42"/>
+      <stop offset="0%" stop-color="#ff8c42"/>
       <stop offset="100%" stop-color="#ff5e87"/>
     </linearGradient>
     <linearGradient id="blueGreen" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#4d9eff"/>
+      <stop offset="0%" stop-color="#4d9eff"/>
       <stop offset="100%" stop-color="#3de8c8"/>
     </linearGradient>
+    <linearGradient id="purplePink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#06080f"/>
+      <stop offset="0%" stop-color="#06080f"/>
       <stop offset="100%" stop-color="#0b0f1e"/>
     </linearGradient>
-    <filter id="glowA" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="60" result="blur"/>
+    <filter id="glowA">
+      <feGaussianBlur stdDeviation="70"/>
     </filter>
-    <filter id="glowB" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="50" result="blur"/>
-    </filter>
-    <clipPath id="roundClip">
-      <rect width="900" height="500" rx="16"/>
+    <clipPath id="rc">
+      <rect width="900" height="620" rx="16"/>
     </clipPath>
   </defs>
 
   <!-- Background -->
-  <rect width="900" height="500" rx="16" fill="url(#bgGrad)"/>
+  <rect width="900" height="620" rx="16" fill="url(#bgGrad)"/>
 
-  <!-- Ambient glows (clipped) -->
-  <g clip-path="url(#roundClip)">
-    <circle cx="-40" cy="-40" r="320" fill="#c8f542" opacity="0.055" filter="url(#glowA)"/>
-    <circle cx="940" cy="540" r="320" fill="#3de8c8" opacity="0.045" filter="url(#glowB)"/>
+  <!-- Ambient glows -->
+  <g clip-path="url(#rc)">
+    <circle cx="0"   cy="0"   r="350" fill="#c8f542" opacity="0.05" filter="url(#glowA)"/>
+    <circle cx="900" cy="620" r="350" fill="#3de8c8" opacity="0.04" filter="url(#glowA)"/>
   </g>
 
-  <!-- Grid lines -->
-  <g clip-path="url(#roundClip)" opacity="0.035" stroke="#8888cc" stroke-width="1">
+  <!-- Grid -->
+  <g clip-path="url(#rc)" stroke="#5566aa" stroke-width="0.5" opacity="0.07">
     <line x1="0" y1="40"  x2="900" y2="40"/>
     <line x1="0" y1="80"  x2="900" y2="80"/>
     <line x1="0" y1="120" x2="900" y2="120"/>
@@ -50,193 +51,221 @@
     <line x1="0" y1="400" x2="900" y2="400"/>
     <line x1="0" y1="440" x2="900" y2="440"/>
     <line x1="0" y1="480" x2="900" y2="480"/>
-    <line x1="45"  y1="0" x2="45"  y2="500"/>
-    <line x1="90"  y1="0" x2="90"  y2="500"/>
-    <line x1="135" y1="0" x2="135" y2="500"/>
-    <line x1="180" y1="0" x2="180" y2="500"/>
-    <line x1="225" y1="0" x2="225" y2="500"/>
-    <line x1="270" y1="0" x2="270" y2="500"/>
-    <line x1="315" y1="0" x2="315" y2="500"/>
-    <line x1="360" y1="0" x2="360" y2="500"/>
-    <line x1="405" y1="0" x2="405" y2="500"/>
-    <line x1="450" y1="0" x2="450" y2="500"/>
-    <line x1="495" y1="0" x2="495" y2="500"/>
-    <line x1="540" y1="0" x2="540" y2="500"/>
-    <line x1="585" y1="0" x2="585" y2="500"/>
-    <line x1="630" y1="0" x2="630" y2="500"/>
-    <line x1="675" y1="0" x2="675" y2="500"/>
-    <line x1="720" y1="0" x2="720" y2="500"/>
-    <line x1="765" y1="0" x2="765" y2="500"/>
-    <line x1="810" y1="0" x2="810" y2="500"/>
-    <line x1="855" y1="0" x2="855" y2="500"/>
+    <line x1="0" y1="520" x2="900" y2="520"/>
+    <line x1="0" y1="560" x2="900" y2="560"/>
+    <line x1="0" y1="600" x2="900" y2="600"/>
+    <line x1="45"  y1="0" x2="45"  y2="620"/>
+    <line x1="90"  y1="0" x2="90"  y2="620"/>
+    <line x1="135" y1="0" x2="135" y2="620"/>
+    <line x1="180" y1="0" x2="180" y2="620"/>
+    <line x1="225" y1="0" x2="225" y2="620"/>
+    <line x1="270" y1="0" x2="270" y2="620"/>
+    <line x1="315" y1="0" x2="315" y2="620"/>
+    <line x1="360" y1="0" x2="360" y2="620"/>
+    <line x1="405" y1="0" x2="405" y2="620"/>
+    <line x1="450" y1="0" x2="450" y2="620"/>
+    <line x1="495" y1="0" x2="495" y2="620"/>
+    <line x1="540" y1="0" x2="540" y2="620"/>
+    <line x1="585" y1="0" x2="585" y2="620"/>
+    <line x1="630" y1="0" x2="630" y2="620"/>
+    <line x1="675" y1="0" x2="675" y2="620"/>
+    <line x1="720" y1="0" x2="720" y2="620"/>
+    <line x1="765" y1="0" x2="765" y2="620"/>
+    <line x1="810" y1="0" x2="810" y2="620"/>
+    <line x1="855" y1="0" x2="855" y2="620"/>
   </g>
 
-  <!-- Top accent bar -->
-  <rect x="0" y="0" width="900" height="3" rx="0" fill="url(#limeCyan)"/>
-  <!-- Bottom accent bar -->
-  <rect x="0" y="497" width="900" height="3" rx="0" fill="url(#limeCyan)"/>
-  <!-- Outer border -->
-  <rect x="0.5" y="0.5" width="899" height="499" rx="15.5" fill="none" stroke="#1e2740" stroke-width="1"/>
+  <!-- Top/bottom accent bars -->
+  <rect x="0" y="0"   width="900" height="3" fill="url(#limeCyan)"/>
+  <rect x="0" y="617" width="900" height="3" fill="url(#limeCyan)"/>
+  <!-- Border -->
+  <rect x="0.5" y="0.5" width="899" height="619" rx="15.5" fill="none" stroke="#1e2740" stroke-width="1"/>
 
-  <!-- ═══════════════════════════════ LEFT COLUMN ═══════════════════════════════ -->
+  <!-- ══════════════════ LEFT COLUMN ══════════════════ -->
 
   <!-- Eyebrow -->
-  <rect x="40" y="38" width="3" height="11" rx="1.5" fill="#c8f542"/>
-  <text x="51" y="48" font-family="'Courier New', monospace" font-size="9.5" fill="#c8f542" letter-spacing="2.5">FULL STACK ENGINEER  ·  JHB, ZA</text>
+  <rect x="40" y="36" width="3" height="11" rx="1.5" fill="#c8f542"/>
+  <text x="51" y="46" font-family="'Courier New',monospace" font-size="9" fill="#c8f542" letter-spacing="2.5">FULL STACK ENGINEER  ·  JHB, ZA</text>
 
   <!-- Name -->
-  <text x="40" y="108" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#dce4f0" letter-spacing="-1.5">Motlalepula</text>
-  <text x="40" y="162" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" font-style="italic" fill="none" stroke="url(#limeCyan)" stroke-width="1.5" letter-spacing="-2">Sello</text>
-  <!-- Sello filled underneath for depth -->
-  <text x="40" y="162" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" font-style="italic" fill="#c8f542" opacity="0.15" letter-spacing="-2">Sello</text>
+  <text x="40" y="106" font-family="Georgia,'Times New Roman',serif" font-size="50" font-weight="700" fill="#f0f4ff" letter-spacing="-1.5">Motlalepula</text>
+  <!-- Sello — outlined gradient treatment -->
+  <text x="40" y="158" font-family="Georgia,'Times New Roman',serif" font-size="54" font-weight="700" font-style="italic" fill="none" stroke="url(#limeCyan)" stroke-width="1.2" letter-spacing="-2">Sello</text>
+  <text x="40" y="158" font-family="Georgia,'Times New Roman',serif" font-size="54" font-weight="700" font-style="italic" fill="#c8f542" opacity="0.12" letter-spacing="-2">Sello</text>
 
-  <!-- Bio — the actual intro -->
-  <text x="40" y="194" font-family="'Courier New', monospace" font-size="11" fill="#8494b0" letter-spacing="0.2">I build things people pay for. Six shipped SaaS products,</text>
-  <text x="40" y="210" font-family="'Courier New', monospace" font-size="11" fill="#8494b0" letter-spacing="0.2">300+ sign-ups, a 4&#x2605; average — and I'm just getting started.</text>
-  <text x="40" y="232" font-family="'Courier New', monospace" font-size="11" fill="#58667a" letter-spacing="0.2">Ruby on the server. JavaScript everywhere else.</text>
-  <text x="40" y="248" font-family="'Courier New', monospace" font-size="11" fill="#58667a" letter-spacing="0.2">Rails for reliability, Next.js for reach.</text>
+  <!-- Bio — light enough to read, not so bright it competes with the name -->
+  <text x="40" y="188" font-family="'Courier New',monospace" font-size="11.5" fill="#b8c8e0" letter-spacing="0.2">I ship products people actually use.</text>
+  <text x="40" y="206" font-family="'Courier New',monospace" font-size="11.5" fill="#b8c8e0" letter-spacing="0.2">Six SaaS apps live in the wild - AI tools, health</text>
+  <text x="40" y="222" font-family="'Courier New',monospace" font-size="11.5" fill="#b8c8e0" letter-spacing="0.2">trackers, community platforms, and utilities -</text>
+  <text x="40" y="238" font-family="'Courier New',monospace" font-size="11.5" fill="#b8c8e0" letter-spacing="0.2">all built solo from idea to production.</text>
 
   <!-- Divider -->
-  <line x1="40" y1="268" x2="410" y2="268" stroke="#1a2235" stroke-width="1"/>
+  <line x1="40" y1="256" x2="415" y2="256" stroke="#1e2a40" stroke-width="1"/>
 
-  <!-- STACK SECTION label -->
-  <text x="40" y="284" font-family="'Courier New', monospace" font-size="8.5" fill="#3d4f6a" letter-spacing="2.5">STACK</text>
+  <!-- Stack label -->
+  <text x="40" y="272" font-family="'Courier New',monospace" font-size="8.5" fill="#4a6080" letter-spacing="2.5">STACK</text>
 
   <!-- Pills row 1 -->
-  <!-- JS -->
-  <rect x="40"  y="292" width="76" height="20" rx="10" fill="rgba(247,223,30,0.07)"  stroke="rgba(247,223,30,0.28)"  stroke-width="1"/>
-  <text x="78"  y="306" font-family="'Courier New', monospace" font-size="9" fill="#f7df1e" text-anchor="middle" font-weight="700">JavaScript</text>
-  <!-- TS -->
-  <rect x="122" y="292" width="72" height="20" rx="10" fill="rgba(77,158,255,0.08)"  stroke="rgba(77,158,255,0.28)"  stroke-width="1"/>
-  <text x="158" y="306" font-family="'Courier New', monospace" font-size="9" fill="#4d9eff" text-anchor="middle" font-weight="700">TypeScript</text>
-  <!-- React -->
-  <rect x="200" y="292" width="54" height="20" rx="10" fill="rgba(97,218,251,0.07)"  stroke="rgba(97,218,251,0.25)"  stroke-width="1"/>
-  <text x="227" y="306" font-family="'Courier New', monospace" font-size="9" fill="#61dafb" text-anchor="middle" font-weight="700">React</text>
-  <!-- Next.js -->
-  <rect x="260" y="292" width="54" height="20" rx="10" fill="rgba(220,220,220,0.06)" stroke="rgba(220,220,220,0.18)" stroke-width="1"/>
-  <text x="287" y="306" font-family="'Courier New', monospace" font-size="9" fill="#c8c8c8" text-anchor="middle" font-weight="700">Next.js</text>
-  <!-- Node -->
-  <rect x="320" y="292" width="54" height="20" rx="10" fill="rgba(74,222,128,0.07)"  stroke="rgba(74,222,128,0.25)"  stroke-width="1"/>
-  <text x="347" y="306" font-family="'Courier New', monospace" font-size="9" fill="#4ade80" text-anchor="middle" font-weight="700">Node.js</text>
+  <rect x="40"  y="280" width="76" height="19" rx="9.5" fill="rgba(247,223,30,0.09)" stroke="rgba(247,223,30,0.3)" stroke-width="1"/>
+  <text x="78"  y="293.5" font-family="'Courier New',monospace" font-size="9" fill="#f7df1e" text-anchor="middle" font-weight="700">JavaScript</text>
+
+  <rect x="122" y="280" width="72" height="19" rx="9.5" fill="rgba(77,158,255,0.09)" stroke="rgba(77,158,255,0.3)" stroke-width="1"/>
+  <text x="158" y="293.5" font-family="'Courier New',monospace" font-size="9" fill="#4d9eff" text-anchor="middle" font-weight="700">TypeScript</text>
+
+  <rect x="200" y="280" width="50" height="19" rx="9.5" fill="rgba(97,218,251,0.08)" stroke="rgba(97,218,251,0.28)" stroke-width="1"/>
+  <text x="225" y="293.5" font-family="'Courier New',monospace" font-size="9" fill="#61dafb" text-anchor="middle" font-weight="700">React</text>
+
+  <rect x="256" y="280" width="52" height="19" rx="9.5" fill="rgba(220,220,220,0.07)" stroke="rgba(220,220,220,0.2)" stroke-width="1"/>
+  <text x="282" y="293.5" font-family="'Courier New',monospace" font-size="9" fill="#d4d4d4" text-anchor="middle" font-weight="700">Next.js</text>
+
+  <rect x="314" y="280" width="80" height="19" rx="9.5" fill="rgba(74,222,128,0.08)" stroke="rgba(74,222,128,0.28)" stroke-width="1"/>
+  <text x="354" y="293.5" font-family="'Courier New',monospace" font-size="9" fill="#4ade80" text-anchor="middle" font-weight="700">Tailwind CSS</text>
 
   <!-- Pills row 2 -->
-  <!-- Rails -->
-  <rect x="40"  y="318" width="46" height="20" rx="10" fill="rgba(239,68,68,0.08)"   stroke="rgba(239,68,68,0.28)"   stroke-width="1"/>
-  <text x="63"  y="332" font-family="'Courier New', monospace" font-size="9" fill="#ef4444" text-anchor="middle" font-weight="700">Rails</text>
-  <!-- PostgreSQL -->
-  <rect x="92"  y="318" width="82" height="20" rx="10" fill="rgba(109,179,232,0.07)" stroke="rgba(109,179,232,0.25)" stroke-width="1"/>
-  <text x="133" y="332" font-family="'Courier New', monospace" font-size="9" fill="#6db3e8" text-anchor="middle" font-weight="700">PostgreSQL</text>
-  <!-- Docker -->
-  <rect x="180" y="318" width="54" height="20" rx="10" fill="rgba(29,99,237,0.08)"   stroke="rgba(29,99,237,0.28)"   stroke-width="1"/>
-  <text x="207" y="332" font-family="'Courier New', monospace" font-size="9" fill="#4d9eff" text-anchor="middle" font-weight="700">Docker</text>
-  <!-- REST APIs -->
-  <rect x="240" y="318" width="66" height="20" rx="10" fill="rgba(61,232,200,0.07)"  stroke="rgba(61,232,200,0.22)"  stroke-width="1"/>
-  <text x="273" y="332" font-family="'Courier New', monospace" font-size="9" fill="#3de8c8" text-anchor="middle" font-weight="700">REST APIs</text>
-  <!-- Linux -->
-  <rect x="312" y="318" width="46" height="20" rx="10" fill="rgba(251,191,36,0.07)"  stroke="rgba(251,191,36,0.22)"  stroke-width="1"/>
-  <text x="335" y="332" font-family="'Courier New', monospace" font-size="9" fill="#fbbf24" text-anchor="middle" font-weight="700">Linux</text>
+  <rect x="40"  y="306" width="82" height="19" rx="9.5" fill="rgba(109,179,232,0.08)" stroke="rgba(109,179,232,0.28)" stroke-width="1"/>
+  <text x="81"  y="319.5" font-family="'Courier New',monospace" font-size="9" fill="#6db3e8" text-anchor="middle" font-weight="700">PostgreSQL</text>
+
+  <rect x="128" y="306" width="66" height="19" rx="9.5" fill="rgba(61,232,200,0.08)" stroke="rgba(61,232,200,0.25)" stroke-width="1"/>
+  <text x="161" y="319.5" font-family="'Courier New',monospace" font-size="9" fill="#3de8c8" text-anchor="middle" font-weight="700">REST APIs</text>
+
+  <rect x="200" y="306" width="90" height="19" rx="9.5" fill="rgba(167,139,250,0.09)" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+  <text x="245" y="319.5" font-family="'Courier New',monospace" font-size="9" fill="#a78bfa" text-anchor="middle" font-weight="700">Framer Motion</text>
+
+  <rect x="296" y="306" width="66" height="19" rx="9.5" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.22)" stroke-width="1"/>
+  <text x="329" y="319.5" font-family="'Courier New',monospace" font-size="9" fill="#fbbf24" text-anchor="middle" font-weight="700">React Flow</text>
+
+  <!-- Pills row 3 -->
+  <rect x="40"  y="332" width="104" height="19" rx="9.5" fill="rgba(255,107,53,0.08)" stroke="rgba(255,107,53,0.25)" stroke-width="1"/>
+  <text x="92"  y="345.5" font-family="'Courier New',monospace" font-size="9" fill="#ff6b35" text-anchor="middle" font-weight="700">TanStack Query</text>
+
+  <rect x="150" y="332" width="50" height="19" rx="9.5" fill="rgba(29,99,237,0.09)" stroke="rgba(29,99,237,0.28)" stroke-width="1"/>
+  <text x="175" y="345.5" font-family="'Courier New',monospace" font-size="9" fill="#4d9eff" text-anchor="middle" font-weight="700">Docker</text>
 
   <!-- Divider -->
-  <line x1="40" y1="352" x2="410" y2="352" stroke="#1a2235" stroke-width="1"/>
+  <line x1="40" y1="362" x2="415" y2="362" stroke="#1e2a40" stroke-width="1"/>
 
-  <!-- Contact footer -->
-  <text x="40" y="374" font-family="'Courier New', monospace" font-size="9" fill="#3d4f6a" letter-spacing="1.5">&#x2709;  motlalepulasello5@gmail.com</text>
-  <text x="40" y="392" font-family="'Courier New', monospace" font-size="9" fill="#3d4f6a" letter-spacing="1.5">&#x25C8;  open to collaborations &amp; freelance</text>
+  <!-- Stats -->
+  <rect x="40"  y="374" width="83" height="56" rx="8" fill="#0c1120" stroke="#1a2538" stroke-width="1"/>
+  <text x="81"  y="400" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#c8f542" text-anchor="middle">6+</text>
+  <text x="81"  y="416" font-family="'Courier New',monospace" font-size="7.5" fill="#4a6080" text-anchor="middle" letter-spacing="1">PRODUCTS</text>
+  <text x="81"  y="425" font-family="'Courier New',monospace" font-size="7.5" fill="#4a6080" text-anchor="middle" letter-spacing="1">SHIPPED</text>
 
-  <!-- Stat cluster bottom-left -->
-  <rect x="40"  y="416" width="76" height="52" rx="8" fill="#0d111c" stroke="#1a2235" stroke-width="1"/>
-  <text x="78"  y="442" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#c8f542" text-anchor="middle">6+</text>
-  <text x="78"  y="456" font-family="'Courier New', monospace" font-size="7.5" fill="#3d4f6a" text-anchor="middle" letter-spacing="1">PRODUCTS</text>
+  <rect x="131" y="374" width="83" height="56" rx="8" fill="#0c1120" stroke="#1a2538" stroke-width="1"/>
+  <text x="172" y="400" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#3de8c8" text-anchor="middle">500+</text>
+  <text x="172" y="416" font-family="'Courier New',monospace" font-size="7.5" fill="#4a6080" text-anchor="middle" letter-spacing="1">ACTIVE</text>
+  <text x="172" y="425" font-family="'Courier New',monospace" font-size="7.5" fill="#4a6080" text-anchor="middle" letter-spacing="1">USERS</text>
 
-  <rect x="124" y="416" width="76" height="52" rx="8" fill="#0d111c" stroke="#1a2235" stroke-width="1"/>
-  <text x="162" y="442" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#3de8c8" text-anchor="middle">300+</text>
-  <text x="162" y="456" font-family="'Courier New', monospace" font-size="7.5" fill="#3d4f6a" text-anchor="middle" letter-spacing="1">SIGN-UPS</text>
+  <rect x="222" y="374" width="83" height="56" rx="8" fill="#0c1120" stroke="#1a2538" stroke-width="1"/>
+  <text x="263" y="400" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#ff8c42" text-anchor="middle">4&#x2605;</text>
+  <text x="263" y="416" font-family="'Courier New',monospace" font-size="7.5" fill="#4a6080" text-anchor="middle" letter-spacing="1">AVG APP</text>
+  <text x="263" y="425" font-family="'Courier New',monospace" font-size="7.5" fill="#4a6080" text-anchor="middle" letter-spacing="1">RATING</text>
 
-  <rect x="208" y="416" width="76" height="52" rx="8" fill="#0d111c" stroke="#1a2235" stroke-width="1"/>
-  <text x="246" y="442" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#ff8c42" text-anchor="middle">93%</text>
-  <text x="246" y="456" font-family="'Courier New', monospace" font-size="7.5" fill="#3d4f6a" text-anchor="middle" letter-spacing="1">SATISFACTION</text>
+  <rect x="313" y="374" width="83" height="56" rx="8" fill="#0c1120" stroke="#1a2538" stroke-width="1"/>
+  <text x="354" y="398" font-family="Georgia,serif" font-size="18" font-weight="700" fill="#a78bfa" text-anchor="middle">Solo</text>
+  <text x="354" y="414" font-family="Georgia,serif" font-size="18" font-weight="700" fill="#a78bfa" text-anchor="middle">Built</text>
+  <text x="354" y="426" font-family="'Courier New',monospace" font-size="7.5" fill="#4a6080" text-anchor="middle" letter-spacing="1">ALL OF IT</text>
 
-  <rect x="292" y="416" width="76" height="52" rx="8" fill="#0d111c" stroke="#1a2235" stroke-width="1"/>
-  <text x="330" y="442" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#ff5e87" text-anchor="middle">4&#x2605;</text>
-  <text x="330" y="456" font-family="'Courier New', monospace" font-size="7.5" fill="#3d4f6a" text-anchor="middle" letter-spacing="1">AVG RATING</text>
+  <!-- Contact -->
+  <line x1="40" y1="446" x2="415" y2="446" stroke="#1e2a40" stroke-width="1"/>
+  <text x="40" y="463" font-family="'Courier New',monospace" font-size="9.5" fill="#7090b0" letter-spacing="0.5">&#x2709;  motlalepulasello5@gmail.com</text>
+  <text x="40" y="480" font-family="'Courier New',monospace" font-size="9.5" fill="#7090b0" letter-spacing="0.5">&#x25C8;  open to collabs &#x26; freelance</text>
 
-  <!-- ═══════════════════════════════ VERTICAL DIVIDER ═══════════════════════════════ -->
-  <line x1="448" y1="28" x2="448" y2="472" stroke="#1a2235" stroke-width="1"/>
+  <!-- ══════════════════ VERTICAL DIVIDER ══════════════════ -->
+  <line x1="448" y1="26" x2="448" y2="594" stroke="#1a2235" stroke-width="1"/>
 
-  <!-- ═══════════════════════════════ RIGHT COLUMN ═══════════════════════════════ -->
+  <!-- ══════════════════ RIGHT COLUMN — 6 APPS in 2-col grid ══════════════════ -->
+  <text x="468" y="46" font-family="'Courier New',monospace" font-size="8.5" fill="#4a6080" letter-spacing="2.5">WHAT I'VE SHIPPED</text>
+  <line x1="574" y1="40" x2="870" y2="40" stroke="#1a2235" stroke-width="1"/>
 
-  <!-- Section label -->
-  <text x="472" y="48" font-family="'Courier New', monospace" font-size="8.5" fill="#3d4f6a" letter-spacing="2.5">WHAT I'VE SHIPPED</text>
-  <line x1="580" y1="43" x2="862" y2="43" stroke="#1a2235" stroke-width="1"/>
+  <!-- Card dimensions: width=190, height=130, gap=10 -->
+  <!-- Row 1, Col 1: Quollie AI — x=468 -->
+  <rect x="468" y="54" width="193" height="130" rx="9" fill="#0c1120" stroke="#1a2538" stroke-width="1"/>
+  <rect x="468" y="54" width="193" height="2"   rx="1" fill="url(#limeCyan)"/>
+  <!-- Glyph: ◈ lightning/agent -->
+  <text x="484" y="89" font-family="Georgia,serif" font-size="22" fill="#c8f542">&#x25C6;</text>
+  <text x="506" y="80" font-family="Georgia,'Times New Roman',serif" font-size="13" font-weight="700" fill="#f0f4ff">Quollie AI</text>
+  <text x="506" y="93" font-family="'Courier New',monospace" font-size="8" fill="#7090b0">quollie.com</text>
+  <line x1="468" y1="99" x2="661" y2="99" stroke="#1a2538" stroke-width="0.75"/>
+  <text x="480" y="114" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">AI sales agent that automates</text>
+  <text x="480" y="127" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">your entire funnel - lead capture,</text>
+  <text x="480" y="140" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">qualification &amp; booking, 24/7.</text>
+  <!-- tag -->
+  <rect x="480" y="152" width="56" height="16" rx="8" fill="rgba(200,245,66,0.09)" stroke="rgba(200,245,66,0.25)" stroke-width="1"/>
+  <text x="508" y="163.5" font-family="'Courier New',monospace" font-size="7.5" fill="#c8f542" text-anchor="middle">AI · SaaS</text>
 
-  <!-- ── PROJECT 1: Quollie AI ── -->
-  <rect x="472" y="58" width="390" height="110" rx="10" fill="#0c1018" stroke="#1a2235" stroke-width="1"/>
-  <!-- Top gradient bar -->
-  <rect x="472" y="58" width="390" height="2" rx="1" fill="url(#limeCyan)"/>
+  <!-- Row 1, Col 2: Belly Clock — x=671 -->
+  <rect x="671" y="54" width="193" height="130" rx="9" fill="#0c1120" stroke="#1a2538" stroke-width="1"/>
+  <rect x="671" y="54" width="193" height="2"   rx="1" fill="url(#orangeRose)"/>
+  <!-- Glyph: ◉ circle/clock -->
+  <text x="687" y="89" font-family="Georgia,serif" font-size="22" fill="#ff8c42">&#x25CE;</text>
+  <text x="709" y="80" font-family="Georgia,'Times New Roman',serif" font-size="13" font-weight="700" fill="#f0f4ff">Belly Clock</text>
+  <text x="709" y="93" font-family="'Courier New',monospace" font-size="8" fill="#7090b0">bellyclock.com</text>
+  <line x1="671" y1="99" x2="864" y2="99" stroke="#1a2538" stroke-width="0.75"/>
+  <text x="683" y="114" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">AI-powered fasting &amp; routine</text>
+  <text x="683" y="127" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">planner. Supports intermittent</text>
+  <text x="683" y="140" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">fasting, Ramadan &amp; Sunnah fasts.</text>
+  <rect x="683" y="152" width="80" height="16" rx="8" fill="rgba(255,140,66,0.09)" stroke="rgba(255,140,66,0.25)" stroke-width="1"/>
+  <text x="723" y="163.5" font-family="'Courier New',monospace" font-size="7.5" fill="#ff8c42" text-anchor="middle">Health · AI</text>
 
-  <!-- Glyph: ◈ (four-pointed star / diamond with dot) — representing AI/intelligence -->
-  <text x="496" y="98" font-family="Georgia, serif" font-size="28" fill="#c8f542" opacity="0.9" text-anchor="middle">&#x2666;</text>
-  <line x1="508" y1="68" x2="508" y2="160" stroke="#1a2235" stroke-width="1"/>
+  <!-- Row 2, Col 1: Indie Launchers — x=468 -->
+  <rect x="468" y="196" width="193" height="130" rx="9" fill="#0c1120" stroke="#1a2538" stroke-width="1"/>
+  <rect x="468" y="196" width="193" height="2"   rx="1" fill="url(#blueGreen)"/>
+  <!-- Glyph: ▶ launch -->
+  <text x="484" y="231" font-family="Georgia,serif" font-size="22" fill="#4d9eff">&#x25B6;</text>
+  <text x="506" y="222" font-family="Georgia,'Times New Roman',serif" font-size="13" font-weight="700" fill="#f0f4ff">Indie Launchers</text>
+  <text x="506" y="235" font-family="'Courier New',monospace" font-size="8" fill="#7090b0">indielaunchers.com</text>
+  <line x1="468" y1="241" x2="661" y2="241" stroke="#1a2538" stroke-width="0.75"/>
+  <text x="480" y="256" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">A launchpad for indie makers —</text>
+  <text x="480" y="269" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">discover products, join the</text>
+  <text x="480" y="282" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">leaderboard, grow your reach.</text>
+  <rect x="480" y="294" width="80" height="16" rx="8" fill="rgba(77,158,255,0.09)" stroke="rgba(77,158,255,0.25)" stroke-width="1"/>
+  <text x="520" y="305.5" font-family="'Courier New',monospace" font-size="7.5" fill="#4d9eff" text-anchor="middle">Community</text>
 
-  <text x="522" y="80" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#dce4f0">Quollie AI</text>
-  <text x="522" y="95" font-family="'Courier New', monospace" font-size="9.5" fill="#8494b0">Quote generation &amp; proposal tooling for freelancers.</text>
-  <text x="522" y="109" font-family="'Courier New', monospace" font-size="9.5" fill="#8494b0">Turns a brief into a structured, client-ready document</text>
-  <text x="522" y="123" font-family="'Courier New', monospace" font-size="9.5" fill="#8494b0">in seconds — no more blank-page paralysis.</text>
+  <!-- Row 2, Col 2: SpeakDiary — x=671 -->
+  <rect x="671" y="196" width="193" height="130" rx="9" fill="#0c1120" stroke="#1a2538" stroke-width="1"/>
+  <rect x="671" y="196" width="193" height="2"   rx="1" fill="url(#purplePink)"/>
+  <!-- Glyph: ◎ mic/voice ring -->
+  <text x="687" y="231" font-family="Georgia,serif" font-size="22" fill="#a78bfa">&#x25CB;</text>
+  <text x="709" y="222" font-family="Georgia,'Times New Roman',serif" font-size="13" font-weight="700" fill="#f0f4ff">SpeakDiary</text>
+  <text x="709" y="235" font-family="'Courier New',monospace" font-size="8" fill="#7090b0">speakdiary.com</text>
+  <line x1="671" y1="241" x2="864" y2="241" stroke="#1a2538" stroke-width="0.75"/>
+  <text x="683" y="256" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">Voice + text journaling app.</text>
+  <text x="683" y="269" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">AI prompts, mood analytics, and</text>
+  <text x="683" y="282" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">a 4.9&#x2605; App Store rating.</text>
+  <rect x="683" y="294" width="80" height="16" rx="8" fill="rgba(167,139,250,0.09)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
+  <text x="723" y="305.5" font-family="'Courier New',monospace" font-size="7.5" fill="#a78bfa" text-anchor="middle">Mobile · AI</text>
 
-  <!-- Stack pills -->
-  <rect x="522" y="134" width="50" height="16" rx="8" fill="rgba(200,245,66,0.08)"  stroke="rgba(200,245,66,0.22)"  stroke-width="1"/>
-  <text x="547" y="145" font-family="'Courier New', monospace" font-size="8" fill="#c8f542"  text-anchor="middle">Next.js</text>
-  <rect x="578" y="134" width="36" height="16" rx="8" fill="rgba(239,68,68,0.08)"   stroke="rgba(239,68,68,0.22)"   stroke-width="1"/>
-  <text x="596" y="145" font-family="'Courier New', monospace" font-size="8" fill="#ef4444"  text-anchor="middle">Rails</text>
-  <rect x="620" y="134" width="62" height="16" rx="8" fill="rgba(109,179,232,0.07)" stroke="rgba(109,179,232,0.22)" stroke-width="1"/>
-  <text x="651" y="145" font-family="'Courier New', monospace" font-size="8" fill="#6db3e8"  text-anchor="middle">PostgreSQL</text>
-  <text x="700" y="145" font-family="'Courier New', monospace" font-size="8.5" fill="#3de8c8">quollie.com &#x2192;</text>
+  <!-- Row 3, Col 1: Newsletter Name Ideas — x=468 -->
+  <rect x="468" y="338" width="193" height="130" rx="9" fill="#0c1120" stroke="#1a2538" stroke-width="1"/>
+  <rect x="468" y="338" width="193" height="2"   rx="1" fill="url(#limeCyan)"/>
+  <!-- Glyph: ✦ sparkle/ideas -->
+  <text x="483" y="373" font-family="Georgia,serif" font-size="20" fill="#3de8c8">&#x2736;</text>
+  <text x="506" y="364" font-family="Georgia,'Times New Roman',serif" font-size="12" font-weight="700" fill="#f0f4ff">Newsletter Names</text>
+  <text x="506" y="377" font-family="'Courier New',monospace" font-size="7.5" fill="#7090b0">newsletternameideas.com</text>
+  <line x1="468" y1="383" x2="661" y2="383" stroke="#1a2538" stroke-width="0.75"/>
+  <text x="480" y="398" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">AI name generator for newsletters.</text>
+  <text x="480" y="411" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">Domain checker, social handle</text>
+  <text x="480" y="424" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">lookup - name to launch, fast.</text>
+  <rect x="480" y="436" width="56" height="16" rx="8" fill="rgba(61,232,200,0.09)" stroke="rgba(61,232,200,0.25)" stroke-width="1"/>
+  <text x="508" y="447.5" font-family="'Courier New',monospace" font-size="7.5" fill="#3de8c8" text-anchor="middle">AI · Tools</text>
 
-  <!-- ── PROJECT 2: Belly Clock ── -->
-  <rect x="472" y="180" width="390" height="110" rx="10" fill="#0c1018" stroke="#1a2235" stroke-width="1"/>
-  <rect x="472" y="180" width="390" height="2" rx="1" fill="url(#orangeRose)"/>
+  <!-- Row 3, Col 2: LoveTest AI — x=671 -->
+  <rect x="671" y="338" width="193" height="130" rx="9" fill="#0c1120" stroke="#1a2538" stroke-width="1"/>
+  <rect x="671" y="338" width="193" height="2"   rx="1" fill="url(#orangeRose)"/>
+  <!-- Glyph: ✦ heart/star -->
+  <text x="687" y="373" font-family="Georgia,serif" font-size="20" fill="#ff5e87">&#x2665;</text>
+  <text x="709" y="364" font-family="Georgia,'Times New Roman',serif" font-size="13" font-weight="700" fill="#f0f4ff">LoveTest AI</text>
+  <text x="709" y="377" font-family="'Courier New',monospace" font-size="8" fill="#7090b0">lovetestai.com</text>
+  <line x1="671" y1="383" x2="864" y2="383" stroke="#1a2538" stroke-width="0.75"/>
+  <text x="683" y="398" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">AI love &amp; compatibility tests -</text>
+  <text x="683" y="411" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">zodiac, numerology, birthdate.</text>
+  <text x="683" y="424" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">High-traffic &amp; free to use.</text>
+  <rect x="683" y="436" width="68" height="16" rx="8" fill="rgba(255,94,135,0.09)" stroke="rgba(255,94,135,0.25)" stroke-width="1"/>
+  <text x="717" y="447.5" font-family="'Courier New',monospace" font-size="7.5" fill="#ff5e87" text-anchor="middle">AI · Viral</text>
 
-  <!-- Glyph: ◉ — representing a timer/clock face -->
-  <text x="496" y="222" font-family="Georgia, serif" font-size="26" fill="#ff8c42" opacity="0.9" text-anchor="middle">&#x25C9;</text>
-  <line x1="508" y1="190" x2="508" y2="282" stroke="#1a2235" stroke-width="1"/>
-
-  <text x="522" y="202" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#dce4f0">Belly Clock</text>
-  <text x="522" y="217" font-family="'Courier New', monospace" font-size="9.5" fill="#8494b0">Pregnancy milestone tracker for expecting parents.</text>
-  <text x="522" y="231" font-family="'Courier New', monospace" font-size="9.5" fill="#8494b0">Week-by-week progress, health reminders, and a</text>
-  <text x="522" y="245" font-family="'Courier New', monospace" font-size="9.5" fill="#8494b0">timeline that makes the journey feel less overwhelming.</text>
-
-  <rect x="522" y="256" width="50" height="16" rx="8" fill="rgba(200,245,66,0.08)"  stroke="rgba(200,245,66,0.22)"  stroke-width="1"/>
-  <text x="547" y="267" font-family="'Courier New', monospace" font-size="8" fill="#c8f542"  text-anchor="middle">Next.js</text>
-  <rect x="578" y="256" width="40" height="16" rx="8" fill="rgba(97,218,251,0.07)"  stroke="rgba(97,218,251,0.22)"  stroke-width="1"/>
-  <text x="598" y="267" font-family="'Courier New', monospace" font-size="8" fill="#61dafb"  text-anchor="middle">React</text>
-  <rect x="624" y="256" width="62" height="16" rx="8" fill="rgba(109,179,232,0.07)" stroke="rgba(109,179,232,0.22)" stroke-width="1"/>
-  <text x="655" y="267" font-family="'Courier New', monospace" font-size="8" fill="#6db3e8"  text-anchor="middle">PostgreSQL</text>
-  <text x="700" y="267" font-family="'Courier New', monospace" font-size="8.5" fill="#ff8c42">bellyclock.com &#x2192;</text>
-
-  <!-- ── PROJECT 3: Indie Launchers ── -->
-  <rect x="472" y="302" width="390" height="110" rx="10" fill="#0c1018" stroke="#1a2235" stroke-width="1"/>
-  <rect x="472" y="302" width="390" height="2" rx="1" fill="url(#blueGreen)"/>
-
-  <!-- Glyph: &#x2023; right-pointing arrow / ► launch symbol -->
-  <text x="496" y="344" font-family="Georgia, serif" font-size="28" fill="#4d9eff" opacity="0.9" text-anchor="middle">&#x25B6;</text>
-  <line x1="508" y1="312" x2="508" y2="404" stroke="#1a2235" stroke-width="1"/>
-
-  <text x="522" y="324" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="700" fill="#dce4f0">Indie Launchers</text>
-  <text x="522" y="339" font-family="'Courier New', monospace" font-size="9.5" fill="#8494b0">A community and toolkit for indie makers going to market.</text>
-  <text x="522" y="353" font-family="'Courier New', monospace" font-size="9.5" fill="#8494b0">Launch checklists, peer accountability, and visibility</text>
-  <text x="522" y="367" font-family="'Courier New', monospace" font-size="9.5" fill="#8494b0">tools — for builders who ship without a team behind them.</text>
-
-  <rect x="522" y="378" width="50" height="16" rx="8" fill="rgba(200,245,66,0.08)"  stroke="rgba(200,245,66,0.22)"  stroke-width="1"/>
-  <text x="547" y="389" font-family="'Courier New', monospace" font-size="8" fill="#c8f542"  text-anchor="middle">Next.js</text>
-  <rect x="578" y="378" width="44" height="16" rx="8" fill="rgba(74,222,128,0.07)"  stroke="rgba(74,222,128,0.22)"  stroke-width="1"/>
-  <text x="600" y="389" font-family="'Courier New', monospace" font-size="8" fill="#4ade80"  text-anchor="middle">Node.js</text>
-  <rect x="628" y="378" width="62" height="16" rx="8" fill="rgba(109,179,232,0.07)" stroke="rgba(109,179,232,0.22)" stroke-width="1"/>
-  <text x="659" y="389" font-family="'Courier New', monospace" font-size="8" fill="#6db3e8"  text-anchor="middle">PostgreSQL</text>
-  <text x="700" y="389" font-family="'Courier New', monospace" font-size="8.5" fill="#4d9eff">indielaunchers.com &#x2192;</text>
-
-  <!-- Bottom tagline on right -->
-  <line x1="472" y1="428" x2="862" y2="428" stroke="#1a2235" stroke-width="1"/>
-  <text x="472" y="448" font-family="'Courier New', monospace" font-size="9" fill="#3d4f6a" letter-spacing="1">&#x40;Motlakz  ·  building in public from Johannesburg</text>
-  <text x="862" y="448" font-family="'Courier New', monospace" font-size="9" fill="#3d4f6a" text-anchor="end" letter-spacing="1">github.com/Motlakz</text>
+  <!-- Bottom tagline right -->
+  <line x1="468" y1="488" x2="864" y2="488" stroke="#1a2235" stroke-width="1"/>
+  <text x="468" y="506" font-family="'Courier New',monospace" font-size="9" fill="#4a6080" letter-spacing="1">&#x40;Motlakz  ·  building in public from Johannesburg</text>
+  <text x="864" y="506" font-family="'Courier New',monospace" font-size="9" fill="#4a6080" text-anchor="end">github.com/Motlakz</text>
 
 </svg>
