@@ -6,22 +6,22 @@ I ship products people actually use. Six SaaS apps live in the wild - AI tools, 
 
 ---
 
-### Quollie AI &nbsp;—&nbsp; [quollie.com](https://quollie.com)
+### Quollie AI &nbsp;-&nbsp; [quollie.com](https://quollie.com)
 AI sales agent that automates your entire funnel - lead capture, qualification, and booking, 24/7.
 
-### Belly Clock &nbsp;—&nbsp; [bellyclock.com](https://bellyclock.com)
+### Belly Clock &nbsp;-&nbsp; [bellyclock.com](https://bellyclock.com)
 AI-powered fasting and routine planner. Supports intermittent fasting, Ramadan, and Sunnah fasts - built around your schedule, not a template.
 
-### Indie Launchers &nbsp;—&nbsp; [indielaunchers.com](https://indielaunchers.com)
+### Indie Launchers &nbsp;-&nbsp; [indielaunchers.com](https://indielaunchers.com)
 A launchpad for indie makers. Discover products, climb the leaderboard, and grow your reach in a community of builders.
 
-### SpeakDiary &nbsp;—&nbsp; [speakdiary.com](https://speakdiary.com)
+### SpeakDiary &nbsp;-&nbsp; [speakdiary.com](https://speakdiary.com)
 Voice + text journaling app with AI prompts, mood analytics, and a 4.9★ rating.
 
-### Newsletter Name Ideas &nbsp;—&nbsp; [newsletternameideas.com](https://newsletternameideas.com)
+### Newsletter Name Ideas &nbsp;-&nbsp; [newsletternameideas.com](https://newsletternameideas.com)
 AI name generator for newsletters - with domain checking and social handle lookup built in.
 
-### LoveTest AI &nbsp;—&nbsp; [lovetestai.com](https://lovetestai.com)
+### LoveTest AI &nbsp;-&nbsp; [lovetestai.com](https://lovetestai.com)
 AI love and compatibility tests - zodiac, numerology, birthdate. High traffic, always free.
 
 ---
