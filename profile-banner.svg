@@ -266,6 +266,4 @@
   <!-- Bottom tagline right -->
   <line x1="468" y1="488" x2="864" y2="488" stroke="#1a2235" stroke-width="1"/>
   <text x="468" y="506" font-family="'Courier New',monospace" font-size="9" fill="#4a6080" letter-spacing="1">&#x40;Motlakz  ·  building in public from Johannesburg</text>
-  <text x="864" y="506" font-family="'Courier New',monospace" font-size="9" fill="#4a6080" text-anchor="end">github.com/Motlakz</text>
-
 </svg>
