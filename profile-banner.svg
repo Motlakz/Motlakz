@@ -231,7 +231,7 @@
   <line x1="671" y1="241" x2="864" y2="241" stroke="#1a2538" stroke-width="0.75"/>
   <text x="683" y="256" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">Voice + text journaling app.</text>
   <text x="683" y="269" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">AI prompts, mood analytics, and</text>
-  <text x="683" y="282" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">a 4.9&#x2605; App Store rating.</text>
+  <text x="683" y="282" font-family="'Courier New',monospace" font-size="8.5" fill="#a8bcd0">a 4.9&#x2605; rating.</text>
   <rect x="683" y="294" width="80" height="16" rx="8" fill="rgba(167,139,250,0.09)" stroke="rgba(167,139,250,0.25)" stroke-width="1"/>
   <text x="723" y="305.5" font-family="'Courier New',monospace" font-size="7.5" fill="#a78bfa" text-anchor="middle">Mobile · AI</text>
 
